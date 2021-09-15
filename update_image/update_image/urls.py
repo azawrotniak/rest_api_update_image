@@ -22,7 +22,7 @@ from app.views import ImageView, UploadImageView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('upload_images/', UploadImageView.as_view({'post': 'post'})),
+    path('upload_image/', UploadImageView.as_view({'post': 'post'})),
     path('images/', ImageView.as_view()),
 ]
 urlpatterns += static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)

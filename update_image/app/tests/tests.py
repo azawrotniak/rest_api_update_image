@@ -68,7 +68,7 @@ def test_display_image_for_person_enterprise(client, user, person_enterprise):
 #     image.user = person_basic
 #     image.save()
 #     client.force_login(user)
-#     response = client.post('/upload_images/')
+#     response = client.post('/upload_image/')
 #     assert response.status_code == 201
 
 
