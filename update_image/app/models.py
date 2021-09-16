@@ -18,6 +18,7 @@ class Person(models.Model):
     def __str__(self):
         return str(self.user)
 
+
 class Image(models.Model):
     image = models.ImageField(upload_to='images/')
     user = models.ForeignKey(Person, on_delete=models.CASCADE)
