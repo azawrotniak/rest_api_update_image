@@ -95,8 +95,8 @@ The application can be used through the website [azawrotniak.pythonanywhere.com]
 | -------|:-------------:| :---------:|
 | admin  | admin         | Premium    |
 | user_1 | password_user1| Basic      |
-| user_2 | password_user1| Premium    |
-| user_3 | password_user1| Enterprise |
+| user_2 | password_user2| Premium    |
+| user_3 | password_user3| Enterprise |
 
 </center>
 
