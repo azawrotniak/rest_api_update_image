@@ -1,5 +1,3 @@
-import tempfile
-
 import pytest
 
 from app.models import Image
@@ -59,16 +57,3 @@ def test_display_image_for_person_enterprise(client, user, person_enterprise):
     response = client.get('/images/')
     assert response.status_code == 200
     assert response.data == []
-
-
-# @pytest.mark.django_db
-# def test_upload_image_jpg_for_person_basic(client, user, person_basic):
-#     image = Image()
-#     image.image = tempfile.NamedTemporaryFile(suffix=".jpg").name
-#     image.user = person_basic
-#     image.save()
-#     client.force_login(user)
-#     response = client.post('/upload_image/')
-#     assert response.status_code == 201
-
-
